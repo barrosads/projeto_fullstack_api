@@ -44,7 +44,10 @@ class Produto extends Model {
       through: models.ProdutoFornecedor,
       foreignKey: 'produto_id',
       otherKey: 'fornecedor_id'
-    });
+    },
+    
+    
+    );
   }
 }
 

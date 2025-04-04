@@ -17,16 +17,14 @@
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
+    "better-sqlite3": "^11.9.1",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mysql": "^2.18.1",
     "mysql2": "^3.14.0",
     "sequelize": "^6.37.6",
-    "sqlite3": "^5.1.7"
+    "sqlite3": "^5.1.7",
+    "sucrase": "^3.35.0"
   },
   "type": "module"
 }
-
-
-
-

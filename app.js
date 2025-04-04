@@ -5,8 +5,8 @@ import userRoutes from './src/routes/userRoutes.js';
 import produtoRoutes from './src/routes/produtoRoutes.js';
 import fornecedorRoutes from './src/routes/fornecedorRoutes.js';
 import produtoFornecedorRoutes from './src/routes/produtoFornecedorRoutes.js';
-import clienteRoutes from './src/routes/clientesRoutes.js';
-import estoqueRoutes from './src/routes/estoqueRoutes.js';
+import clientesRoutes from './src/routes/cliente.js';
+import estoqueController from './src/routes/estoqueMovimentacao.js';
 
 import './src/database/index.js';
 
@@ -26,8 +26,8 @@ class App{
         this.app.use('/produtos/', produtoRoutes)     
         this.app.use('/fornecedores/', fornecedorRoutes)     
         this.app.use('/produtos_fornecedores/', produtoFornecedorRoutes)
-        this.app.use('/clientes/', clienteRoutes);
-        this.app.use('/estoque/', estoqueRoutes);
+        this.app.use('/clientes/', clientesRoutes)
+        this.app.use('/estoquemovimentacao/', estoqueController)
     }
 }
 
